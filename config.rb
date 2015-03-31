@@ -74,4 +74,5 @@ configure :build do
 
   # Use relative URLs
   # activate :relative_assets
+  set :http_prefix, data.autotune.base_url
 end
