@@ -1,0 +1,10 @@
+#!/bin/bash
+BUILD_COMMAND="bundle exec middleman build"
+INPUT_DATA=$(</dev/stdin)
+SAVE_DATA_TO=data/autotune.json
+
+echo "Saving autotune data to $SAVE_DATA_TO"
+mkdir -p `dirname $SAVE_DATA_TO`
+echo "$INPUT_DATA" > $SAVE_DATA_TO
+
+$BUILD_COMMAND

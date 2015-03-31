@@ -1,0 +1,59 @@
+{
+  "name": "Headline Generator",
+  "description": "",
+  "type": "graphic",
+  "tags": ["Middleman"],
+  "authors": [""],
+  "form": {
+    "schema": {
+      "type": "object",
+      "properties": {
+        "theme": {
+          "title": "Theme",
+          "type": "string",
+          "required": true,
+          "default": "default",
+          "enum": ["default"]
+        },
+        "heading": {
+          "title": "Titles",
+          "type": "array",
+          "required": true
+        },
+        "response": {
+          "title": "Button texts",
+          "type": "array",
+          "required": true
+        },
+        "template": {
+          "title": "Headlines",
+          "type": "array",
+          "required": true
+        },
+        "wtf": {
+          "title": "Word choices",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "_key": {
+                "title": "Word name",
+                "type": "string"
+              },
+              "words": {
+                "title": "Words",
+                "type": "array"
+              }
+            }
+          }
+        }
+      }
+    },
+    "options": {
+      "fields": {
+        "theme": { "type": "select", "optionLabels": ["None"] },
+        "wtf": { "type": "map" }
+      }
+    }
+  }
+}
