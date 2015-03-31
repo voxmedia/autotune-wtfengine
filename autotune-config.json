@@ -30,7 +30,7 @@
           "type": "array",
           "required": true
         },
-        "wtf": {
+        "words": {
           "title": "Word choices",
           "type": "array",
           "items": {

@@ -18,16 +18,18 @@
     "Silly @animal with @color fur"
   ],
 
-  "animal": [
-    "dog",
-    "cat",
-    "rabbit"
-  ],
+  "words": {
+    "animal": [
+      "dog",
+      "cat",
+      "rabbit"
+    ],
 
-  "color": [
-    "red",
-    "blue",
-    "green",
-    "yellow"
-  ]
+    "color": [
+      "red",
+      "blue",
+      "green",
+      "yellow"
+    ]
+  }
 }
