@@ -18,18 +18,13 @@
     "Silly @animal with @color fur"
   ],
 
-  "words": {
-    "animal": [
-      "dog",
-      "cat",
-      "rabbit"
-    ],
-
-    "color": [
-      "red",
-      "blue",
-      "green",
-      "yellow"
-    ]
+  "word_bags": {
+    "animals": {
+      "words": [
+        "foo",
+        "barfoo"
+      ]
+    }
   }
+
 }
