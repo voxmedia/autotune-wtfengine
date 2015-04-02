@@ -7,9 +7,9 @@ $(function() {
     // pymChild.sendHeight();
     var data = {heading: AUTOTUNE.heading, response: AUTOTUNE.response, template: AUTOTUNE.template};
 
-    for (var prop in AUTOTUNE.words) {
-      data[prop] = AUTOTUNE[prop];
+    for (var prop in AUTOTUNE.word_bags) {
+      data[prop] = AUTOTUNE.word_bags[prop].words;
     }
-    WTF.init(AUTOTUNE);
+    WTF.init(data);
   });
 });

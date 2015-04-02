@@ -2,8 +2,6 @@
 # Autotune
 ###
 
-activate :autotune
-
 set :layout, data.autotune.theme
 
 ###
@@ -74,5 +72,5 @@ configure :build do
 
   # Use relative URLs
   # activate :relative_assets
-  set :http_prefix, data.autotune.base_url
+  set :http_prefix, data.autotune.base_url if data.autotune.base_url
 end
