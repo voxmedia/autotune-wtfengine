@@ -22,6 +22,7 @@ var WTF = (function() {
     var corpus;
     var regex;
     var dom;
+    var updateCallback;
 
     /*
       ------------------------------------------------------------
@@ -149,7 +150,7 @@ var WTF = (function() {
             type = item[ 0 ];
             text = item[ 1 ];
 
-            console.log( text, copy, copy[ text ] );
+            //console.log( text, copy, copy[ text ] );
 
             part = randomItem( copy[ text ], true );
             idea = idea.replace( type, part );
@@ -161,12 +162,10 @@ var WTF = (function() {
         // Update output
 
         dom.generate.text( randomItem( responses ) );
-        dom.output.html(
-            '<dl>' +
-                '<dt>' + randomItem( headings ) + '</dt>' +
-                '<dd>' + idea + '</dd>' +
-            '</dl>'
-        );
+        var output = '';
+        if ( headings.length > 0 ) output += '<h4>' + randomItem( headings ) + '</h4>';
+        output += '<h2>' + idea + '</h2>';
+        dom.output.html(output);
 
         // Toggle animation
 
@@ -182,6 +181,8 @@ var WTF = (function() {
     function showOutput() {
 
         dom.output.addClass( 'animate' ).css( 'opacity', 1 );
+
+        if (updateCallback) updateCallback();
     }
 
     function randomItem( list, remove ) {
@@ -240,6 +241,8 @@ var WTF = (function() {
         init: function( data ) {
 
             if ( !data ) throw data + ' is not a valid corpus';
+
+            if ( arguments[1] ) updateCallback = arguments[1];
 
             if ( typeof data === 'string' ) {
 

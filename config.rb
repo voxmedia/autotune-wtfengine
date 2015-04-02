@@ -4,6 +4,11 @@
 
 set :layout, data.autotune.theme
 
+set :twitter, ''
+set :twitter_user_id, ''
+set :facebook_app_id, ''
+set :site_name, ''
+
 ###
 # Compass
 ###

@@ -10,6 +10,6 @@ $(function() {
     for (var prop in AUTOTUNE.word_bags) {
       data[prop] = AUTOTUNE.word_bags[prop].words;
     }
-    WTF.init(data);
+    WTF.init(data, function() { pymChild.sendHeight(); });
   });
 });
