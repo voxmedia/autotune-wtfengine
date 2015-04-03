@@ -44,3 +44,26 @@ h4, h2 {
   background-color:#cfcfcf;
   color:#333;
 }
+
+.share {margin-top: 5%;}
+.share a {
+  display:block;
+  box-sizing: border-box;
+  width:50%;
+  float:left;
+  padding:3% 1%;
+  text-align:center;
+  text-decoration:none;
+}
+.share a:hover {
+  opacity:.8;
+}
+
+#twitter, #twitter:visited {
+  background-color: #00aced;
+  color: white;
+}
+#facebook, #twitter:visited {
+  background-color: #325a97;
+  color: white;
+}

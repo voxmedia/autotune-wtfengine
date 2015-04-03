@@ -1,7 +1,15 @@
-<script>AUTOTUNE = <%=data.autotune.to_json %>;</script>
+<script>
+AUTOTUNE = <%=data.autotune.to_json %>;
+FB_APP_ID = '<%=facebook_app_id %>';
+TWITTER = '<%=twitter %>';
+</script>
 <article>
   <div id="output">
     <noscript>You must enable Javascript</noscript>
   </div>
   <a id="generate" href="#" title="Click for another"></a>
+  <div class="share">
+    <a id="twitter" href="#">Tweet</a>
+    <a id="facebook" href="#">Share</a>
+  </div>
 </article>
