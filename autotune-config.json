@@ -13,21 +13,24 @@
           "type": "string",
           "required": true,
           "default": "default",
-          "enum": ["default"]
+          "enum": [
+            "default"
+          ]
         },
         "heading": {
-          "title": "Titles",
-          "type": "array",
-          "required": true
+          "title": "Headers",
+          "type": "string",
+          "required": false
         },
         "response": {
-          "title": "Button texts",
-          "type": "array",
+          "title": "Button labels",
+          "type": "string",
+          "default": "Generate another!",
           "required": true
         },
         "template": {
-          "title": "Headlines",
-          "type": "array",
+          "title": "Headline templates",
+          "type": "string",
           "required": true
         },
         "word_bags": {
@@ -38,7 +41,8 @@
             "properties": {
               "_key": {
                 "title": "Group name",
-                "type": "string"
+                "type": "string",
+                "pattern": "[a-z0-9_-]*"
               },
               "words": {
                 "title": "Words",
@@ -51,8 +55,41 @@
     },
     "options": {
       "fields": {
-        "theme": { "type": "select", "optionLabels": ["None"] },
-        "word_bags": { "type": "map" }
+        "theme": {
+          "type": "select",
+          "optionLabels": [ "None" ]
+        },
+        "word_bags": {
+          "type": "map",
+          "items": {
+            "fields": {
+              "_key": {
+                "helper": "Name corresponds to the @name used in the headline templates above"
+              },
+              "words": {
+                "helper": "Comma-separated list of words to use in the template",
+                "type": "tag"
+              }
+            }
+          }
+        },
+        "heading": {
+          "helper": "Displayed above the headline, one per line, not required",
+          "placeholder": "Check this out:\nThis is a cool headline",
+          "type": "textarea",
+          "rows": 3
+        },
+        "response": {
+          "helper": "Label for the button, one per line",
+          "type": "textarea",
+          "rows": 3
+        },
+        "template": {
+          "helper": "Templates for the generated headline, one per line, put a @ before a word to use a word from the groups below, madlib-style",
+          "placeholder": "Oooo! Its a @adj @animal\nGross. I don't like this @adj @animal",
+          "type": "textarea",
+          "rows": 3
+        }
       }
     }
   }

@@ -2,18 +2,9 @@
   "title": "Testing heds",
   "slug": "testing-heds",
   "theme": "default",
-  "heading": [
-    "Yo, check it!",
-    "Nah, you won't like this"
-  ],
-  "response": [
-    "Gimmmie!",
-    "Click me!"
-  ],
-  "template": [
-    "Oooo! Its a @adj @animal",
-    "Gross. I don't like this @adj @animal"
-  ],
+  "heading": "Yo, check it!\nNah, you won't like this",
+  "response": "Gimmmie!\nClick me!",
+  "template": "Oooo! Its a @adj @animal\nGross. I don't like this @adj @animal",
   "word_bags": {
     "adj": {
       "words": [
