@@ -1,7 +1,8 @@
 {
-  "name": "Headline Generator",
+  "name": "Headline randomizer",
   "description": "",
   "type": "graphic",
+  "thumbnail": "thumbnail.png",
   "tags": ["Middleman"],
   "authors": [""],
   "form": {
