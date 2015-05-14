@@ -2,8 +2,8 @@
 # Autotune
 ###
 
-set :layout, data.autotune.theme
-set :vertical, data.autotune.vertical
+set :layout, 'default'
+set :vertical, data.autotune.theme
 
 set :twitter, ''
 set :twitter_user_id, ''

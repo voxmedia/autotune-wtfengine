@@ -13,13 +13,6 @@
           "title": "Theme",
           "type": "string",
           "required": true,
-          "default": "default",
-          "enum": ["default"]
-        },
-        "vertical": {
-          "title": "Vertical",
-          "type": "string",
-          "required": true,
           "default": "vox",
           "enum": ["vox", "sbnation", "theverge", "polygon", "racked", "eater"]
         },
