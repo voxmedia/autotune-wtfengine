@@ -2,7 +2,6 @@
   "title": "Testing heds",
   "slug": "testing-heds",
   "theme": "default",
-  "vertical": "vox",
   "heading": "Yo, check it!\nNah, you won't like this",
   "response": "Gimmmie!\nClick me!",
   "template": "Oooo! Its a @adj @animal\nGross. I don't like this @adj @animal",
