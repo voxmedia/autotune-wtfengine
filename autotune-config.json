@@ -56,7 +56,7 @@
       "fields": {
         "theme": {
           "type": "select",
-          "optionLabels": [ "None" ]
+          "optionLabels": ["SBNation", "The Verge", "Polygon", "Racked", "Eater", "Vox"]
         },
         "word_bags": {
           "type": "map",
