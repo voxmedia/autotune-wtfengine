@@ -3,7 +3,7 @@
 ###
 
 set :layout, data.autotune.theme
-set :vertical, data.autotune.theme || ("vox" || "racked" || "polygon" || "sbnation" || "theverge" || "eater" || "creative")
+set :vertical, data.autotune.vertical
 
 set :twitter, ''
 set :twitter_user_id, ''

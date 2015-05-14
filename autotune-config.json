@@ -14,8 +14,15 @@
           "type": "string",
           "required": true,
           "default": "default",
-          "enum": ["default", "sbnation", "theverge", "polygon", "racked", "eater", "vox"]
+          "enum": ["default"]
         },
+        "vertical": {
+          "title": "Vertical",
+          "type": "string",
+          "required": true,
+          "default": "vox",
+          "enum": ["vox", "sbnation", "theverge", "polygon", "racked", "eater"]
+        }
         "heading": {
           "title": "Headers",
           "type": "string",
@@ -55,6 +62,10 @@
     "options": {
       "fields": {
         "theme": {
+          "type": "select",
+          "optionLabels": [ "None" ]
+        },
+        "vertical": {
           "type": "select",
           "optionLabels": [ "None" ]
         },
