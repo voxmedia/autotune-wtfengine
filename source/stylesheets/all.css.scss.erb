@@ -1,0 +1,117 @@
+@import '<%= vertical %>';
+
+@charset "utf-8";
+
+@font-face {
+  font-family: 'fontello';
+  src: url('http://fonts.voxmedia.com/editorial-apps/fontello-updated-3-23-15/fontello.eot');
+  src: url('http://fonts.voxmedia.com/editorial-apps/fontello-updated-3-23-15/fontello.eot#iefix') format('embedded-opentype'),
+       url('http://fonts.voxmedia.com/editorial-apps/fontello-updated-3-23-15/fontello.woff') format('woff'),
+       url('http://fonts.voxmedia.com/editorial-apps/fontello-updated-3-23-15/fontello.ttf') format('truetype'),
+       url('http://fonts.voxmedia.com/editorial-apps/fontello-updated-3-23-15/fontello.svg#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  color:#222;
+  background-color: none;
+}
+article {
+  max-width: 600px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#output {
+  padding: 5% 0%;
+}
+
+h4 {
+  font-family: $title-font;
+  font-size: 14px;
+  margin: 0;
+}
+
+h2 {
+  font-family: $output-font;
+  font-size: 32px;
+  margin: 5px 0 0;
+}
+
+h4, h2 {
+  line-height: 1.4em;
+  font-weight: normal;
+}
+
+
+#generate {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  padding: 3% 1%;
+  background-color: $generate-bg;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: $generate-font;
+}
+#generate:hover {
+  background-color: darken($generate-bg, 4%);
+}
+
+.share {margin-top: 5%;}
+.share a {
+  display: block;
+  box-sizing: border-box;
+  width: 50%;
+  float: left;
+  padding: 3% 1%;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: $social-font;
+}
+
+#twitter, #twitter:visited {
+  background-color: #00aced;
+  color: white;
+  &:hover{
+    background-color: darken(#00aced, 4%);
+  }
+}
+
+#twitter:before {
+  content: '\e806';
+}
+
+#facebook, #twitter:visited {
+  background-color: #325a97;
+  color: white;
+  &:hover{
+    background-color: darken(#325a97, 4%);
+  }
+}
+
+#facebook:before {
+  content: '\e807';
+}
+
+#twitter:before,
+#facebook:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 6px;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+}
