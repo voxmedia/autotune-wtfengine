@@ -7,18 +7,10 @@
   "template": "Oooo! Its a @adj @animal\nGross. I don't like this @adj @animal",
   "word_bags": {
     "adj": {
-      "words": [
-        "cute",
-        "smelly",
-        "fuzzy"
-      ]
+      "words": ["cute","smelly","fuzzy"]
     },
     "animal": {
-      "words": [
-        "frog",
-        "cat",
-        "otter"
-      ]
+      "words": ["frog","cat","otter"]
     }
   }
 }
