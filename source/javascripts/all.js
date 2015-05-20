@@ -21,8 +21,14 @@ $(function() {
     var pymChild = pym.Child();
     // Anytime you change the height of the graphic, do this:
     // pymChild.sendHeight();
+
+    var set_heading = '';
+    if (AUTOTUNE.heading){
+      set_heading = AUTOTUNE.heading.split("\n");
+    }
+
     var data = {
-      heading: AUTOTUNE.heading.split("\n"),
+      heading: set_heading,
       response: AUTOTUNE.response.split("\n"),
       template: AUTOTUNE.template.split("\n")
     };
