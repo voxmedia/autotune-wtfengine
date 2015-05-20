@@ -36,14 +36,26 @@ $(function() {
     for (var prop in AUTOTUNE.word_bags) {
       data[prop] = AUTOTUNE.word_bags[prop].words;
     }
+
+    FB_APP_ID = '249141081161';
+
     WTF.init(data, function() {
       $('#facebook').attr(
         'href',
-        'https://www.facebook.com/dialog/feed?display=popup' +
+        'https://www.facebook.com/sharer/sharer.php?' +
+          'u=' + encodeURIComponent(AUTOTUNE.story_url || window.location.toString()) + 
+          '&name=' + encodeURIComponent(AUTOTUNE.title)
+          );
+        /*
+        'https://www.facebook.com/dialog/share?' +
+          'display=popup' +
           '&app_id=' + FB_APP_ID +
           '&link=' + encodeURIComponent(AUTOTUNE.story_url || window.location.toString()) +
           '&name=' + encodeURIComponent(AUTOTUNE.title) +
-          '&description=' + encodeURIComponent($('#output h2').text()));
+          '&description=' + encodeURIComponent($('#output h2').text()) + 
+          '&redirect_uri=' + encodeURIComponent(AUTOTUNE.story_url || window.location.toString())
+          );
+        */
       $('#twitter').attr(
         'href',
         'https://twitter.com/share?' +
