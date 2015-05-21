@@ -3,7 +3,7 @@
   "slug": "testing-heds",
   "theme": "vox",
   "response": "Gimmmie!\nClick me!",
-  "template": "Oooo! Its a @adj @animal\nGross. I don't like this @adj @animal",
+  "template": "Ooooo! Its a @adj @animal\nGross. I don't like this @adj @animal",
   "word_bags": {
     "adj": {
       "words": ["cute","smelly","fuzzy"]
