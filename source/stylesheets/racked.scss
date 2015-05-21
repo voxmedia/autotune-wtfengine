@@ -1,33 +1,33 @@
 @font-face {font-family: 'Calluna-Regular';
-  src: url('http://fonts.voxmedia.com/racked-fonts/2D239F_0_0.eot');
-  src: url('http://fonts.voxmedia.com/racked-fonts/2D239F_0_0.eot?#iefix') format('embedded-opentype'),
-    url('http://fonts.voxmedia.com/racked-fonts/2D239F_0_0.woff2') format('woff2'),
-    url('http://fonts.voxmedia.com/racked-fonts/2D239F_0_0.woff') format('woff'),
-    url('http://fonts.voxmedia.com/racked-fonts/2D239F_0_0.ttf') format('truetype');
+  src: url('//fonts.voxmedia.com/racked-fonts/2D239F_0_0.eot');
+  src: url('//fonts.voxmedia.com/racked-fonts/2D239F_0_0.eot?#iefix') format('embedded-opentype'),
+    url('//fonts.voxmedia.com/racked-fonts/2D239F_0_0.woff2') format('woff2'),
+    url('//fonts.voxmedia.com/racked-fonts/2D239F_0_0.woff') format('woff'),
+    url('//fonts.voxmedia.com/racked-fonts/2D239F_0_0.ttf') format('truetype');
 }
 
 @font-face {
   font-family: "Franklin ITC Light";
-  src: url("http://fonts.voxmedia.com/racked-fonts/8d2188df-697f-4806-be83-3505571b1ad7-2.eot");
-  src: url("http://fonts.voxmedia.com/racked-fonts/8d2188df-697f-4806-be83-3505571b1ad7-2.eot?") format("embedded-opentype"),
-       url("http://fonts.voxmedia.com/racked-fonts/8d2188df-697f-4806-be83-3505571b1ad7-3.woff") format("woff"),
-       url("http://fonts.voxmedia.com/racked-fonts/8d2188df-697f-4806-be83-3505571b1ad7-1.ttf") format("truetype");
+  src: url("//fonts.voxmedia.com/racked-fonts/8d2188df-697f-4806-be83-3505571b1ad7-2.eot");
+  src: url("//fonts.voxmedia.com/racked-fonts/8d2188df-697f-4806-be83-3505571b1ad7-2.eot?") format("embedded-opentype"),
+       url("//fonts.voxmedia.com/racked-fonts/8d2188df-697f-4806-be83-3505571b1ad7-3.woff") format("woff"),
+       url("//fonts.voxmedia.com/racked-fonts/8d2188df-697f-4806-be83-3505571b1ad7-1.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: "Franklin ITC Cond Light";
-  src: url("http://fonts.voxmedia.com/racked-fonts/efd5b79a-f59e-43e7-8db2-4b42d3bc390c-2.eot");
-  src: url("http://fonts.voxmedia.com/racked-fonts/efd5b79a-f59e-43e7-8db2-4b42d3bc390c-2.eot?") format("embedded-opentype"),
-       url("http://fonts.voxmedia.com/racked-fonts/efd5b79a-f59e-43e7-8db2-4b42d3bc390c-3.woff") format("woff"),
-       url("http://fonts.voxmedia.com/racked-fonts/efd5b79a-f59e-43e7-8db2-4b42d3bc390c-1.ttf") format("truetype");
+  src: url("//fonts.voxmedia.com/racked-fonts/efd5b79a-f59e-43e7-8db2-4b42d3bc390c-2.eot");
+  src: url("//fonts.voxmedia.com/racked-fonts/efd5b79a-f59e-43e7-8db2-4b42d3bc390c-2.eot?") format("embedded-opentype"),
+       url("//fonts.voxmedia.com/racked-fonts/efd5b79a-f59e-43e7-8db2-4b42d3bc390c-3.woff") format("woff"),
+       url("//fonts.voxmedia.com/racked-fonts/efd5b79a-f59e-43e7-8db2-4b42d3bc390c-1.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 
 $title-font: 'Franklin ITC Light', 'Helvetica', 'Arial', sans-serif;
-$output-font: 'Calluna-Regular', 'Helvetica', 'Arial', sans-serif;
+$output-font: 'Franklin ITC Cond Light', 'Helvetica', 'Arial', sans-serif;
 $social-font: 'Franklin ITC Cond Light', 'Helvetica', 'Arial', sans-serif;
 $generate-font: 'Franklin ITC Cond Light', 'Helvetica', 'Arial', sans-serif;
 $generate-bg: #579FAB;
