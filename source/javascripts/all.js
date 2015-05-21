@@ -56,7 +56,7 @@ $(function() {
       $('#facebook').attr(
         'href',
         'https://www.facebook.com/sharer/sharer.php?' +
-          'u=' + document.referrer + //encodeURIComponent(AUTOTUNE.story_url || window.location.toString()) +
+          'u=' + document.referrer +
           '&name=' + encodeURIComponent(AUTOTUNE.title)
           );
         /*
@@ -73,7 +73,7 @@ $(function() {
         'href',
         'https://twitter.com/share?' +
           '&text=' + encodeURIComponent($('#output h2').text()) + 
-          '&url=' + document.referrer + //encodeURIComponent(AUTOTUNE.story_url || window.location.toString()) +
+          '&url=' + document.referrer +
           '&via=' + twitterHandle
           );
       pymChild.sendHeight();
