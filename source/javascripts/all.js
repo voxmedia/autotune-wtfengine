@@ -27,7 +27,7 @@ $(function() {
       set_heading = AUTOTUNE.heading.split("\n");
     }
 
-    var twitterHandle;
+    var twitterHandle = AUTOTUNE.theme;
     switch (AUTOTUNE.theme){
       case 'vox':
         twitterHandle = 'voxdotcom'
