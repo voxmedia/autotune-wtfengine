@@ -1,18 +1,9 @@
-@import url(http://cloud.typography.com/706184/796042/css/fonts.css);
-
-@font-face {
-  font-family: "Franklin ITC Cond Light";
-  src: url("//fonts.voxmedia.com/racked-fonts/efd5b79a-f59e-43e7-8db2-4b42d3bc390c-2.eot");
-  src: url("//fonts.voxmedia.com/racked-fonts/efd5b79a-f59e-43e7-8db2-4b42d3bc390c-2.eot?") format("embedded-opentype"),
-       url("//fonts.voxmedia.com/racked-fonts/efd5b79a-f59e-43e7-8db2-4b42d3bc390c-3.woff") format("woff"),
-       url("//fonts.voxmedia.com/racked-fonts/efd5b79a-f59e-43e7-8db2-4b42d3bc390c-1.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
+@import url(https://cloud.typography.com/706184/796042/css/fonts.css);
+@import url(https://cloud.typography.com/706184/753582/css/fonts.css);
 
 $title-font: 'Gotham SSm A', 'Gotham SSm B', 'Helvetica', 'Arial', sans-serif;
 $output-font: 'Sentinel SSm A', 'Sentinel SSm B', 'Georgia', serif;
-$social-font: 'Franklin ITC Cond Light', ''Helvetica', 'Arial'', sans-serif;
+$social-font: 'Gotham SSm A', 'Gotham SSm B', ''Helvetica', 'Arial'', sans-serif;
 $generate-font: 'Gotham SSm A', 'Gotham SSm B', 'Helvetica', 'Arial', sans-serif;
 $generate-bg: #292929;
 
