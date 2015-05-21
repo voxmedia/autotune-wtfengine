@@ -3,6 +3,10 @@ AUTOTUNE = <%=data.autotune.to_json %>;
 FB_APP_ID = '<%=facebook_app_id %>';
 TWITTER = '<%=twitter %>';
 </script>
+<% if vertical == 'theverge' %>
+	<script src="//use.typekit.net/kxl5epj.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+<% end %>
 <article>
   <div id="output">
     <noscript>You must enable Javascript</noscript>
