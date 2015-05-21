@@ -5,3 +5,11 @@ $output-font: 'Helvetica', 'Arial', sans-serif;
 $social-font: 'din-condensed-web', 'Arial', sans-serif;
 $generate-font: 'din-condensed-web', 'Helvetica', 'Arial', sans-serif;
 $generate-bg: #fa4b2a;
+
+#generate {
+  font-size: 18px;
+}
+
+.share a {
+  font-size: 15px !important;
+}
