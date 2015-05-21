@@ -27,11 +27,17 @@
 }
 
 $title-font: 'Franklin ITC Light', 'Helvetica', 'Arial', sans-serif;
-$output-font: 'Franklin ITC Cond Light', 'Helvetica', 'Arial', sans-serif;
+$output-font: 'Calluna-Regular', 'Helvetica', 'Arial', sans-serif;
 $social-font: 'Franklin ITC Cond Light', 'Helvetica', 'Arial', sans-serif;
 $generate-font: 'Franklin ITC Cond Light', 'Helvetica', 'Arial', sans-serif;
 $generate-bg: #579FAB;
 
 #generate {
+  font-size: 18px;
 	letter-spacing: 1px;
+}
+
+.share {
+  font-size: 15px;
+  letter-spacing: 1px;
 }
