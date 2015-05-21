@@ -27,6 +27,19 @@ $(function() {
       set_heading = AUTOTUNE.heading.split("\n");
     }
 
+    var twitterHandle;
+    switch (AUTOTUNE.theme){
+      case 'vox':
+        twitterHandle = 'voxdotcom'
+        break;
+      case 'theverge':
+        twitterHandle = 'verge'
+        break;
+      default:
+        break;
+    }
+
+
     var data = {
       heading: set_heading,
       response: AUTOTUNE.response.split("\n"),
@@ -59,9 +72,10 @@ $(function() {
       $('#twitter').attr(
         'href',
         'https://twitter.com/share?' +
-          'url=' + encodeURIComponent(AUTOTUNE.story_url || window.location.toString()) +
-          '&via=' + TWITTER +
-          '&text=' + encodeURIComponent($('#output h2').text()));
+          '&text=' + encodeURIComponent($('#output h2').text()) + 
+          '&url=' + encodeURIComponent(AUTOTUNE.story_url || window.location.toString()) +
+          '&via=' + twitterHandle
+          );
       pymChild.sendHeight();
     });
 
