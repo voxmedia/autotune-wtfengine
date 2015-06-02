@@ -14,7 +14,12 @@
           "type": "string",
           "required": true,
           "default": "vox",
-          "enum": ["sbnation", "theverge", "polygon", "racked", "eater", "vox"]
+          "enum": ["sbnation", "theverge", "polygon", "racked", "eater", "vox", "custom"]
+        },
+        "customColor": {
+          "title": "Primary theme color",
+          "type": "string",
+          "dependencies": "theme"
         },
         "heading": {
           "title": "Headers",
@@ -56,7 +61,13 @@
       "fields": {
         "theme": {
           "type": "select",
-          "optionLabels": ["SBNation", "The Verge", "Polygon", "Racked", "Eater", "Vox"]
+          "optionLabels": ["SBNation", "The Verge", "Polygon", "Racked", "Eater", "Vox", "Custom"]
+        },
+        "customColor": {
+          "helper":"Color for custom theme. Eg:<i> #F0F0F0</i>",  
+          "dependencies": {
+            "theme": "custom"
+          }
         },
         "word_bags": {
           "type": "map",
