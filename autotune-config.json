@@ -45,7 +45,7 @@
               },
               "words": {
                 "title": "Words",
-                "type": "array"
+                "type": "string"
               }
             }
           }
@@ -67,7 +67,6 @@
               },
               "words": {
                 "helper": "Comma-separated list of words to use in the template",
-                "type": "tag"
               }
             }
           }
