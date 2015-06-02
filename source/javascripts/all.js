@@ -47,7 +47,7 @@ $(function() {
     };
 
     for (var prop in AUTOTUNE.word_bags) {
-      data[prop] = AUTOTUNE.word_bags[prop].words;
+      data[prop] = AUTOTUNE.word_bags[prop].words.replace(', ',',').split(',');
     }
 
     FB_APP_ID = '249141081161';
