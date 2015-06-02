@@ -41,7 +41,7 @@
               "_key": {
                 "title": "Group name",
                 "type": "string",
-                "pattern": "[a-z0-9_-]*"
+                "pattern": "[A-Za-z0-9_-]*"
               },
               "words": {
                 "title": "Words",
