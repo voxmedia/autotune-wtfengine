@@ -64,7 +64,7 @@
           "optionLabels": ["SBNation", "The Verge", "Polygon", "Racked", "Eater", "Vox", "Custom"]
         },
         "customColor": {
-          "helper":"Color for custom theme. Eg:<i> #F0F0F0</i>",  
+          "helper": "Color for custom theme. Eg:<i> #F0F0F0</i>",  
           "dependencies": {
             "theme": "custom"
           }
