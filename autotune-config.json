@@ -66,7 +66,7 @@
                 "helper": "Name corresponds to the @name used in the headline templates above"
               },
               "words": {
-                "helper": "Comma-separated list of words to use in the template",
+                "helper": "Comma-separated list of words to use in the template"
               }
             }
           }
