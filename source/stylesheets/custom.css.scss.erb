@@ -1,5 +1,5 @@
 @import 'creative';
 
-<% if defined? data.autotune.customColor %>
+<% unless data.autotune.customColor.nil? %>
 $generate-bg: <%= data.autotune.customColor %>;
 <% end %>
