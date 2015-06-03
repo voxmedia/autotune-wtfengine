@@ -38,8 +38,7 @@ $(function() {
       default:
         break;
     }
-
-
+    
     var data = {
       heading: set_heading,
       response: AUTOTUNE.response.split("\n"),

@@ -74,7 +74,7 @@
           "items": {
             "fields": {
               "_key": {
-                "helper": "Name corresponds to the @name used in the headline templates above"
+                "helper": "Name corresponds to the @name used in the headline templates above. Don't include the @ symbol."
               },
               "words": {
                 "helper": "Comma-separated list of words to use in the template"
