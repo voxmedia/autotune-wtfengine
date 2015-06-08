@@ -4,18 +4,12 @@
   "type": "graphic",
   "thumbnail": "thumbnail.png",
   "tags": ["Middleman"],
+  "themes": ["sbnation", "theverge", "polygon", "racked", "eater", "vox", "custom"],
   "authors": [""],
   "form": {
     "schema": {
       "type": "object",
       "properties": {
-        "theme": {
-          "title": "Theme",
-          "type": "string",
-          "required": true,
-          "default": "vox",
-          "enum": ["sbnation", "theverge", "polygon", "racked", "eater", "vox", "custom"]
-        },
         "customColor": {
           "title": "Primary theme color",
           "type": "string",
@@ -59,12 +53,8 @@
     },
     "options": {
       "fields": {
-        "theme": {
-          "type": "select",
-          "optionLabels": ["SBNation", "The Verge", "Polygon", "Racked", "Eater", "Vox", "Custom"]
-        },
         "customColor": {
-          "helper": "Color for custom theme. Eg:<i> #F0F0F0</i>",  
+          "helper": "Color for custom theme. Eg:<i> #F0F0F0</i>",
           "dependencies": {
             "theme": "custom"
           }
