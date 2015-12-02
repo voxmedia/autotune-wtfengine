@@ -2,6 +2,8 @@
   "name": "Headline randomizer",
   "description": "",
   "type": "graphic",
+  "preview_type": "live",
+  "sample_data": "data/autotune.json",
   "thumbnail": "thumbnail.png",
   "tags": ["Middleman"],
   "themes": ["sbnation", "theverge", "polygon", "racked", "eater", "vox", "custom"],
