@@ -72,6 +72,7 @@ $(function() {
     console.log('----------- received message', data);
     data = JSON.parse(data);
     loadGraphic(data);
+    pymChild.sendHeight();
   })
 
   $(document).ready(function() {
