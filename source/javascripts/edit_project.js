@@ -68,11 +68,14 @@ $(function() {
 
   $('.share a').click(openShareWindow);
 
+  $(window).on('load resize', function(){
+    pymChild.sendHeight();
+  });
+
   pymChild.onMessage('updateData', function(data) {
     console.log('----------- received message', data);
     data = JSON.parse(data);
     loadGraphic(data);
-    pymChild.sendHeight();
   })
 
   $(document).ready(function() {
