@@ -1,6 +1,7 @@
 ###
 # Autotune
 ###
+activate :directory_indexes
 
 set :layout, 'default'
 set :vertical, data.autotune.theme

@@ -2,6 +2,8 @@
 //= require wtf
 
 $(function() {
+  var pymChild = pym.Child()
+      FB_APP_ID = '249141081161';
   var openShareWindow = function (e) {
     var $link = $(this),
         width = 500,
@@ -18,18 +20,14 @@ $(function() {
     }
   };
 
-  $(document).ready(function() {
-    var pymChild = pym.Child();
-    // Anytime you change the height of the graphic, do this:
-    // pymChild.sendHeight();
-
+  function loadGraphic(form_data){
     var set_heading = '';
-    if (AUTOTUNE.heading){
-      set_heading = AUTOTUNE.heading.split("\n");
+    if (form_data.heading){
+      set_heading = form_data.heading.split("\n");
     }
 
-    var twitterHandle = AUTOTUNE.theme;
-    switch (AUTOTUNE.theme){
+    var twitterHandle = form_data.theme;
+    switch (form_data.theme){
       case 'vox':
         twitterHandle = 'voxdotcom'
         break;
@@ -42,15 +40,13 @@ $(function() {
 
     var data = {
       heading: set_heading,
-      response: AUTOTUNE.response.split("\n"),
-      template: AUTOTUNE.template.split("\n")
+      response: form_data.response.split("\n"),
+      template: form_data.template.split("\n")
     };
 
-    for (var prop in AUTOTUNE.word_bags) {
-      data[prop] = AUTOTUNE.word_bags[prop].words.replace(/\s*,\s*/g,',').split(',');
+    for (var prop in form_data.word_bags) {
+      data[prop] = form_data.word_bags[prop].words.replace(/\s*,\s*/g,',').split(',');
     }
-
-    FB_APP_ID = '249141081161';
 
     WTF.init(data, function() {
       $('#facebook').attr(
@@ -68,7 +64,23 @@ $(function() {
           );
       pymChild.sendHeight();
     });
+  }
 
-    $('.share a').click(openShareWindow);
+  $('.share a').click(openShareWindow);
+
+  pymChild.onMessage('updateData', function(data) {
+    console.log('----------- received message', data);
+    data = JSON.parse(data);
+    loadGraphic(data);
+  })
+
+  $(document).ready(function() {
+    // Anytime you change the height of the graphic, do this:
+    // pymChild.sendHeight();
+    if(window.location.hash === '#new'){
+      loadGraphic(AUTOTUNE);
+    }
+    pymChild.sendMessage('childLoaded', 'ready');
+
   });
 });
