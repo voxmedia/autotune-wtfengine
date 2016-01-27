@@ -1,6 +1,8 @@
 //= require pym
 //= require wtf
 
+var proj_data;
+
 $(function() {
   var pymChild = pym.Child()
       FB_APP_ID = '249141081161';
@@ -75,7 +77,10 @@ $(function() {
   pymChild.onMessage('updateData', function(data) {
     console.log('----------- received message', data);
     data = JSON.parse(data);
-    loadGraphic(data);
+    if(JSON.stringify(proj_data) !== JSON.stringify(data)){
+      proj_data = data;
+      loadGraphic(proj_data);
+    }
   })
 
   $(document).ready(function() {
