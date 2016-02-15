@@ -6,7 +6,7 @@
   "sample_data": "data/autotune.json",
   "thumbnail": "thumbnail.png",
   "tags": ["Middleman"],
-  "themes": ["sbnation", "theverge", "polygon", "racked", "eater", "vox", "custom"],
+  "themes": ["sbnation", "curbed", "theverge", "polygon", "racked", "eater", "vox", "custom"],
   "authors": [""],
   "form": {
     "schema": {
