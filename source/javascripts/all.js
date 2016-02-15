@@ -1,5 +1,5 @@
 //= require pym
-//= require wtf
+//= require _wtf
 
 $(function() {
   var openShareWindow = function (e) {

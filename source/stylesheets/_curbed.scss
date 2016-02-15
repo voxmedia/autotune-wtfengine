@@ -1,0 +1,19 @@
+@import url('https://fonts.voxmedia.com/unison/curbed/curbed.css');
+
+$primary-color: #ff604a;
+$secondary-color: #465451;
+
+$font-family-sans-serif: 'Acto', Verdana, Helvetica, Roboto, Arial, sans-serif;
+$font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+
+$body-font-family: $font-family-serif;
+
+$header-font-family: 'Acto', Verdana, Helvetica, Roboto, Arial, sans-serif;
+$header-font-weight: 700;
+
+
+$title-font: $body-font-family;
+$output-font: $header-font-family;
+$social-font: $header-font-family;
+$generate-font: $header-font-family;
+$generate-bg: $primary-color;
