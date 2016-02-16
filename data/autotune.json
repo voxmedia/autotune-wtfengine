@@ -1,7 +1,8 @@
 {
   "title": "Testing heds",
   "slug": "testing-heds",
-  "theme": "curbed",
+  "theme": "eater",
+  "heading": "Check out this funny headline\nOMG animals!\n",
   "response": "Gimmmie!\nClick me!",
   "template": "Ooooo! Its a @adj @animal\nGross. I don't like this @adj @animal",
   "word_bags": {

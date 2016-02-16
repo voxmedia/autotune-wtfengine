@@ -1,0 +1,67 @@
+@font-face{
+  font-family: "Balto";
+  src:url('//cdn0.vox-cdn.com/fonts/vox/baltoweb-book.v81c1cef.eot');
+  src:url('//cdn0.vox-cdn.com/fonts/vox/baltoweb-book.ved29186.woff') format('woff');
+  font-weight:400;
+  font-style:normal;
+}
+
+@font-face {
+  font-family:"Balto";
+  src:url(https://cdn0.vox-cdn.com/fonts/vox/baltoweb-medium.v32923ad.eot);
+  src:url(https://cdn0.vox-cdn.com/fonts/vox/baltoweb-medium.v10502d2.woff) format("woff");
+  font-weight:500;
+  font-style:normal;
+ }
+
+@font-face{
+  font-family:"Balto";
+  src:url(https://cdn0.vox-cdn.com/fonts/vox/baltoweb-bold.v8e1522a.eot);
+  src:url(https://cdn0.vox-cdn.com/fonts/vox/baltoweb-bold.v02933a5.woff) format("woff");
+  font-weight:700;
+  font-style:normal;
+}
+
+@font-face {
+  font-family: "Harriet";
+  src: url('//fonts.voxmedia.com.s3.amazonaws.com/editorial-apps/harriet-regular/harriet_text_regular.eot');
+  src: url('//fonts.voxmedia.com.s3.amazonaws.com/editorial-apps/harriet-regular/harriet_text_regular.woff') format('woff'),
+       url('//fonts.voxmedia.com.s3.amazonaws.com/editorial-apps/harriet-regular/harriet_text_regular.ttf') format('truetype'),
+       url('//fonts.voxmedia.com.s3.amazonaws.com/editorial-apps/harriet-regular/harriet_text_regular.svg') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Harriet";
+  src: url('//fonts.voxmedia.com.s3.amazonaws.com/editorial-apps/harriet-italic/harriet_text_regular_italic.eot');
+  src: url('//fonts.voxmedia.com.s3.amazonaws.com/editorial-apps/harriet-italic/harriet_text_regular_italic.woff') format('woff'),
+       url('//fonts.voxmedia.com.s3.amazonaws.com/editorial-apps/harriet-italic/harriet_text_regular_italic.ttf') format('truetype'),
+       url('//fonts.voxmedia.com.s3.amazonaws.com/editorial-apps/harriet-italic/harriet_text_regular_italic.svg') format('svg');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Harriet display";
+  src: url('//fonts.voxmedia.com.s3.amazonaws.com/editorial-apps/harriet/harriet_display_bold_italic.eot');
+  src: url('//fonts.voxmedia.com.s3.amazonaws.com/editorial-apps/harriet/harriet_display_bold_italic.woff') format('woff'),
+       url('//fonts.voxmedia.com.s3.amazonaws.com/editorial-apps/harriet/harriet_display_bold_italic.ttf') format('truetype'),
+       url('//fonts.voxmedia.com.s3.amazonaws.com/editorial-apps/harriet/harriet_display_bold_italic.svg') format('svg');
+  font-weight: 600;
+  font-style: italic;
+}
+
+// voxicons
+@font-face {
+  font-family: "voxicon";
+  src: url('//fonts.voxmedia.com.s3.amazonaws.com/editorial-apps/vox-icon/voxicon.eot');
+  src: url('//fonts.voxmedia.com.s3.amazonaws.com/editorial-apps/vox-icon/voxicon.woff') format('woff'),
+       url('//fonts.voxmedia.com.s3.amazonaws.com/editorial-apps/vox-icon/voxicon.ttf') format('truetype');
+}
+
+$balto: 'Balto', Helvetica, Roboto, Arial, sans-serif;
+$harriet: 'Harriet', Georgia, "Times New Roman", Times, serif;
+$harriet-display: 'Harriet display', Georgia, "Times New Roman", Times, serif;
+$voxicon: 'voxicon';
+$nitti: 'Nitti';

@@ -1,0 +1,57 @@
+@import url(//cloud.typography.com/706184/636620/css/fonts.css);
+@import url(//cloud.typography.com/706184/7209152/css/fonts.css);
+
+//Sentinel Family
+$sentinel: "Sentinel A", "Sentinel B", "Sentinel SSm A", "Sentinel SSm B", Georgia, Cambria, "Times New Roman", Times, serif;
+
+// knockout family
+$knockout-28: 'Knockout 28 A', 'Knockout 28 B', Helvetica, Roboto, Arial, sans-serif;
+$knockout-30: 'Knockout 30 A', 'Knockout 30 B', Helvetica, Roboto, Arial, sans-serif;
+$knockout-32: 'Knockout 32 A', 'Knockout 32 B', Helvetica, Roboto, Arial, sans-serif;
+
+// gotham family
+$gotham: 'Gotham SSm A', 'Gotham SSm B', Helvetica, Roboto, Arial, sans-serif;
+$gotham-alt: 'Gotham A', 'Gotham B', Helvetica, Roboto, Arial, sans-serif;
+$gotham-condensed: 'Gotham Cond SSm A', 'Gotham Cond SSm B', Helvetica, Roboto, Arial, sans-serif;
+$gotham-narrow: 'Gotham Narrow SSm A', 'Gotham Narrow SSm B', Helvetica, Roboto, Arial, sans-serif;
+$gotham-narrow-alt: 'Gotham Narrow A', 'Gotham Narrow B', Helvetica, Roboto, Arial, sans-serif;
+
+// mercury
+$mercury: "Mercury SSm A", "Mercury SSm B", Georgia, Cambria, "Times New Roman", Times, serif;
+
+
+.-gotham {
+  font-family: $gotham;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.-gotham-narrow-light {
+  font-family: $gotham-narrow;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.-gotham-medium {
+  font-family: $gotham;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.-gotham-narrow-black {
+  font-family: $gotham-narrow;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.-gotham-narrow-ultra {
+  font-family: $gotham-narrow-alt;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.-sentinel-bold {
+  font-family: $sentinel;
+  font-weight: 700;
+  font-style: normal;
+}

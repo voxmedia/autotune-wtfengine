@@ -1,0 +1,56 @@
+// EdProd Framework Settings
+// THIS FILE IS FOR VARIABLES ONLY!!
+// Look at the _settings.scss file one folder up to see available variables
+// USE _overrides.scss FOR CSS RULES
+// This file loads before the framework, so most foundation variables are not
+// available yet. Overrides loads after the framework.
+
+$primary-color: #4f7177;
+$secondary-color: #4f7177;
+
+$arrow-color: #6d98a8;
+
+$header-font-family: 'Balto';
+$header-font-weight: 700;
+$header-font-color: rgb(76,78,77);
+
+$body-font-family: 'Balto';
+$body-font-color: rgb(76,78,77);
+
+$body-bg: rgb(241,243,242);
+
+$paragraph-font-size: 1.2rem;
+$button-bg-color: $secondary-color;
+$button-bg-color-hover: darken($button-bg-color, 4%);
+
+$paragraph-font-size: 1.2rem;
+
+$progress-bar-color: rgba(0,0,0,.1);
+
+// colors
+$vox-yellow: rgb( 255, 242, 0 );
+$gop: #ED3D3B;
+$republican: #ED3D3B;
+$dem: #0f5a8d;
+$democrat: #0f5a8d;
+$vox-orange: #f6901e;
+$vox-teal: #5a9296;
+$vox-chartreuse: #a4cd39;
+$vox-magenta: #ec1d8e;
+$vox-plum: #561740;
+$vox-cornflower: #3f68b1;
+$vox-ocean: #144a99;
+$vox-lilac: #9773c6;
+$vox-turquoise: #1ed8d8;
+$vox-seaglass: #75c7aa;
+$vox-seagreen: #a0d18d;
+$vox-slate: #4e7075;
+$vox-salmon: #ff7161;
+$vox-cherry: #e01e09;
+$vox-wine: #880e00;
+$vox-gold: #b2a900;
+$vox-lemon: #fff64d;
+$vox-sun: #ffe600;
+$vox-azure: #11a3d5;
+$vox-sky: #65cae3;
+$vox-cerulean: #006688;

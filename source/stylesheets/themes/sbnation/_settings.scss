@@ -1,0 +1,20 @@
+// EdProd Framework Settings
+// THIS FILE IS FOR VARIABLES ONLY!!
+// Look at the _settings.scss file one folder up to see available variables
+// USE _overrides.scss FOR CSS RULES
+// This file loads before the framework, so most foundation variables are not
+// available yet. Overrides loads after the framework.
+
+$primary-color: #c52126;
+$secondary-color: #292929;
+
+$arrow-color: $primary-color;
+
+$header-font-family: 'Sentinel A', 'Sentinel B', $sentinel;
+
+$body-font-family: $mercury;
+$body-font-color: #292929;
+
+$button-font-family: $gotham;
+$button-bg-color: $secondary-color;
+$button-bg-color-hover: darken($button-bg-color, 4%);

@@ -1,4 +1,9 @@
-@import '<%= vertical %>';
+@import 'themes/<%= vertical %>/fonts';
+@import 'themes/<%= vertical %>/settings';
+
+$button-font-family: $body-font-family !default;
+$button-bg-color: $primary-color !default;
+$button-bg-color-hover: lighten($button-bg-color, 4%) !default;
 
 @charset "utf-8";
 
@@ -14,6 +19,8 @@
 }
 
 body {
+  font-family: $body-font-family;
+  font-size:16px;
   color:#222;
   background-color: none;
 }
@@ -29,13 +36,11 @@ article {
 }
 
 h4 {
-  font-family: $title-font;
-  font-size: 14px;
+  font-size:16px;
   margin: 0;
 }
 
 h2 {
-  font-family: $output-font;
   font-size: 32px;
   margin: 5px 0 0;
 }
@@ -51,15 +56,15 @@ h4, h2 {
   display: block;
   width: 100%;
   padding: 3% 1%;
-  background-color: $generate-bg;
+  background-color: $button-bg-color;
   color: white;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: $generate-font;
+  font-family: $button-font-family;
 }
 #generate:hover {
-  background-color: darken($generate-bg, 4%);
+  background-color: $button-bg-color-hover;
 }
 
 .share {margin-top: 5%;}
@@ -73,7 +78,7 @@ h4, h2 {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 12px;
-  font-family: $social-font;
+  font-family: $button-font-family;
 }
 
 #twitter, #twitter:visited {

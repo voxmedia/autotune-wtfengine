@@ -1,0 +1,29 @@
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/293d82");
+
+@font-face {
+  font-family: 'DINNextLTPro-BoldCondensed';
+  src: url('//fonts.voxmedia.com/the-verge-50/293D82_1_0.eot');
+  src: url('//fonts.voxmedia.com/the-verge-50/293D82_1_0.eot?#iefix') format('embedded-opentype'),
+       url('//fonts.voxmedia.com/the-verge-50/293D82_1_0.woff') format('woff'),
+       url('//fonts.voxmedia.com/the-verge-50/293D82_1_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'DINNextLTPro-HeavyCondensed';
+  src: url('//fonts.voxmedia.com/the-verge-50/293D82_2_0.eot');
+  src: url('//fonts.voxmedia.com/the-verge-50/293D82_2_0.eot?#iefix') format('embedded-opentype'),
+       url('//fonts.voxmedia.com/the-verge-50/293D82_2_0.woff') format('woff'),
+       url('//fonts.voxmedia.com/the-verge-50/293D82_2_0.ttf') format('truetype');
+}
+
+$adelle: "adelle", Georgia, "Times New Roman", Times, serif;
+$menu-font: Helvetica, Roboto, Arial, sans-serif;
+
+// gotham family
+$gotham: 'Gotham SSm A', 'Gotham SSm B', Verdana, Helvetica, Roboto, Arial, sans-serif;
+$gotham-condensed: 'Gotham Cond SSm A', 'Gotham Cond SSm B', Verdana, Helvetica, Roboto, Arial, sans-serif;
+$gotham-narrow: 'Gotham Narrow SSm A', 'Gotham Narrow SSm B', Verdana, Helvetica, Roboto, Arial, sans-serif;
+
+// mercury
+$mercury: "Mercury SSm A", "Mercury SSm B", Georgia, "Times New Roman", Times, serif;
