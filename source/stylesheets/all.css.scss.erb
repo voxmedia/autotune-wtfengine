@@ -4,6 +4,8 @@
 $button-font-family: $body-font-family !default;
 $button-bg-color: $primary-color !default;
 $button-bg-color-hover: lighten($button-bg-color, 4%) !default;
+$button-font-color: white !default;
+$button-font-weight: normal !default;
 
 @charset "utf-8";
 
@@ -57,11 +59,12 @@ h4, h2 {
   width: 100%;
   padding: 3% 1%;
   background-color: $button-bg-color;
-  color: white;
+  color: $button-font-color;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   font-family: $button-font-family;
+  font-weight: $button-font-weight;
 }
 #generate:hover {
   background-color: $button-bg-color-hover;

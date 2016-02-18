@@ -5,7 +5,7 @@
 // This file loads before the framework, so most foundation variables are not
 // available yet. Overrides loads after the framework.
 
-$primary-color: #ff604a;
+$primary-color:  #ff604a;
 $secondary-color: #465451;
 
 $arrow-color: $primary-color;
@@ -24,8 +24,9 @@ $header-font-weight: 700;
 $paragraph-font-family: $body-font-family;
 
 $button-font-family: $header-font-family;
-$button-bg-color: $primary-color;
+$button-bg-color: #CE463F;
 $button-bg-color-hover: darken($button-bg-color, 4%);
+$button-font-weight: bold;
 
 $side-nav-font-family: $font-family-sans-serif;
 
