@@ -12,5 +12,9 @@ $paragraph-font-family: $body-font-family;
 $header-font-family: 'Klavika Bold';
 $header-font-weight: 700;
 
-$button-font-family: $body-font-family;
+$button-font-family: $header-font-family;
 $button-bg-color: $primary-color;
+
+.share a {
+  font-family: 'Klavika' !important;
+}
