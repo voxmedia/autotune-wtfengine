@@ -39,7 +39,7 @@ set :site_name, ''
 
 data.autotune.available_themes.each do |theme|
   proxy "/themes/#{theme}.css",
-        '/theme/themed-styles.css',
+        '/themes/themed-styles.css',
         locals: { theme_name: theme,
                   vertical: data.autotune.theme_data[theme].group_slug },
         ignore: true
