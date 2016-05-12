@@ -37,9 +37,13 @@ set :site_name, ''
 #   page "/admin/*"
 # end
 
-# Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
-# proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
-#  :which_fake_page => "Rendering a fake page with a local variable" }
+data.autotune.available_themes.each do |theme|
+  proxy "/themes/#{theme}.css",
+        '/theme/themed-styles.css',
+        locals: { theme_name: theme,
+                  vertical: data.autotune.theme_data[theme].group_slug },
+        ignore: true
+end
 
 ###
 # Helpers
