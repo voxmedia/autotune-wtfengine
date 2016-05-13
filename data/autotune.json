@@ -1,9 +1,8 @@
 {
   "title": "Testing heds",
   "slug": "testing-heds",
+  "group": "eater",
   "theme": "eater",
-  "group": "generic",
-  "theme": "generic",
   "available_themes": ["custom", "eater", "generic"],
   "heading": "Check out this funny headline\nOMG animals!\n",
   "response": "Gimmmie!\nClick me!",
