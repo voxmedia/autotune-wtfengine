@@ -28,17 +28,7 @@ $(function() {
       set_heading = AUTOTUNE.heading.split("\n");
     }
 
-    var twitterHandle = AUTOTUNE.theme;
-    switch (AUTOTUNE.theme){
-      case 'vox':
-        twitterHandle = 'voxdotcom'
-        break;
-      case 'theverge':
-        twitterHandle = 'verge'
-        break;
-      default:
-        break;
-    }
+    var twitterHandle = AUTOTUNE.theme_data[AUTOTUNE.theme].social.twitter_handle;
 
     var data = {
       heading: set_heading,
