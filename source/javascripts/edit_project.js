@@ -4,7 +4,7 @@
 var proj_data;
 
 $(function() {
-  var pymChild = pym.Child()
+  var pymChild = pym.Child(),
       FB_APP_ID = '249141081161';
   var openShareWindow = function (e) {
     var $link = $(this),
@@ -23,22 +23,29 @@ $(function() {
   };
 
   function loadGraphic(form_data){
+    // load css file first
+    var themeTag = document.getElementById('themecss');
+    var themeFile = themeTag.getAttribute('href');
+    themeTag.setAttribute('href',
+      themeFile.replace(themeFile.match('[a-zA-Z0-9\-_]*.css$'), form_data.theme +'.css')
+    );
+
+    // handle custom color
+    if(form_data.theme === 'custom'){
+      $('#generate').css('background-color',form_data.customColor)
+        .hover(function(){
+          $(this).css('background-color',form_data.customColor);
+        });
+    } else {
+      $('#generate').removeProp('style');
+    }
+
     var set_heading = '';
     if (form_data.heading){
       set_heading = form_data.heading.split("\n");
     }
 
-    var twitterHandle = form_data.theme;
-    switch (form_data.theme){
-      case 'vox':
-        twitterHandle = 'voxdotcom'
-        break;
-      case 'theverge':
-        twitterHandle = 'verge'
-        break;
-      default:
-        break;
-    }
+    var twitterHandle = AUTOTUNE.theme_data[form_data.theme].social.twitter_handle;
 
     var data = {
       heading: set_heading,
@@ -81,7 +88,7 @@ $(function() {
       proj_data = data;
       loadGraphic(proj_data);
     }
-  })
+  });
 
   $(document).ready(function() {
     // Anytime you change the height of the graphic, do this:
@@ -89,6 +96,7 @@ $(function() {
     if(window.location.hash === '#new'){
       loadGraphic(AUTOTUNE);
     }
+
     pymChild.sendMessage('childLoaded', 'ready');
 
   });
