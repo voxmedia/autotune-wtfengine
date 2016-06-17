@@ -64,6 +64,7 @@
         "word_bags": {
           "type": "map",
           "items": {
+            "fieldClass": "well",
             "fields": {
               "_key": {
                 "helper": "Name corresponds to the @name used in the headline templates above. Don't include the @ symbol."
