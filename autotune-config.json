@@ -38,6 +38,7 @@
           "title": "Word groups",
           "items": {
             "type": "object",
+            "title": "Word Group",
             "properties": {
               "_key": {
                 "title": "Group name",
