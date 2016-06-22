@@ -78,7 +78,7 @@
           "toolbar": {
             "showLabels": true,
             "actions": [{
-                "label": "Add Moment",
+                "label": "Add Word Group",
                 "action": "add"
             }]
           },
