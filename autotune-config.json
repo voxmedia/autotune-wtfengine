@@ -12,6 +12,10 @@
     "schema": {
       "type": "object",
       "properties": {
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
         "customColor": {
           "title": "Primary theme color",
           "type": "string",
@@ -35,7 +39,8 @@
         },
         "word_bags": {
           "type": "array",
-          "title": "Word groups",
+          "title": "Randomizer Content",
+          "default": [{}],
           "items": {
             "type": "object",
             "title": "Word Group",
@@ -56,6 +61,9 @@
     },
     "options": {
       "fields": {
+        "title": {
+          "placeholder": "Title"
+        },
         "customColor": {
           "helper": "Color for custom theme. Eg:<i> #F0F0F0</i>",
           "dependencies": {
@@ -64,14 +72,26 @@
         },
         "word_bags": {
           "type": "map",
+          "actionbarStyle": "bottom",
+          "toolbarSticky": true,
+          "hideToolbarWithChildren": false,
+          "toolbar": {
+            "showLabels": true,
+            "actions": [{
+                "label": "Add Moment",
+                "action": "add"
+            }]
+          },
           "items": {
             "fieldClass": "well",
             "fields": {
               "_key": {
-                "helper": "Name corresponds to the @name used in the headline templates above. Don't include the @ symbol."
+                "helper": "Name corresponds to the @name used in the headline templates above. Don't include the @ symbol.",
+                "placeholder": "Group"
               },
               "words": {
-                "helper": "Comma-separated list of words to use in the template"
+                "helper": "Comma-separated list of words to use in the template",
+                "placeholder": "Words"
               }
             }
           }
