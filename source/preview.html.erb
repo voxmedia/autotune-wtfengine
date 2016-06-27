@@ -8,34 +8,28 @@ $(document).ready(function () {
   $('article').hide();
 	window.randomizer = Randomizer(AUTOTUNE);
   pymChild.onMessage('updateData', function(data) {
-    form_data = JSON.parse(data);
-    $('.m-graphics-topper').show();
+    AUTOTUNE = JSON.parse(data);
 
 		// load css file first
 		var themeTag = document.getElementById('themecss');
 		var themeFile = themeTag.getAttribute('href');
 		themeTag.setAttribute('href',
-			themeFile.replace(themeFile.match('[a-zA-Z0-9\-_]*.css$'), form_data.theme +'.css')
+			themeFile.replace(themeFile.match('[a-zA-Z0-9\-_]*.css$'), AUTOTUNE.theme +'.css')
 		);
 
 		// handle custom color
-		if(form_data.theme === 'custom'){
-			$('#generate').css('background-color',form_data.customColor)
+		if(AUTOTUNE.theme === 'custom'){
+			$('#generate').css('background-color',AUTOTUNE.customColor)
 				.hover(function(){
-					$(this).css('background-color',form_data.customColor);
+					$(this).css('background-color',AUTOTUNE.customColor);
 				});
 		} else {
 			$('#generate').removeProp('style');
 		}
 
-		var set_heading = '';
-		if (form_data.heading){
-			set_heading = form_data.heading.split("\n");
-		}
+		var twitterHandle = AUTOTUNE.theme_data[AUTOTUNE.theme].social.twitter_handle;
 
-		var twitterHandle = AUTOTUNE.theme_data[form_data.theme].social.twitter_handle;
-
-    window.randomizer.reload(form_data);
+    window.randomizer.reload(AUTOTUNE);
 		$('article').show();
 });
 
