@@ -3,6 +3,11 @@ AUTOTUNE = <%= autotune_data_without_themes.to_json %>;
 FB_APP_ID = '<%=facebook_app_id %>';
 TWITTER = '<%=twitter %>';
 </script>
+<script>
+$(document).ready(function () {
+  Randomizer(AUTOTUNE);
+});
+</script>
 <% if vertical == 'theverge' %>
 	<script src="//use.typekit.net/kxl5epj.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
@@ -17,5 +22,3 @@ TWITTER = '<%=twitter %>';
     <a id="facebook" href="#">Share</a>
   </div>
 </article>
-
-<%= javascript_include_tag  "all" %>

@@ -93,9 +93,7 @@ $(function() {
   $(document).ready(function() {
     // Anytime you change the height of the graphic, do this:
     // pymChild.sendHeight();
-    if(window.location.hash === '#new'){
-      loadGraphic(AUTOTUNE);
-    }
+    loadGraphic();
 
     pymChild.sendMessage('childLoaded', 'ready');
 

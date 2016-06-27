@@ -3,6 +3,44 @@ AUTOTUNE = <%=data.autotune.to_json %>;
 FB_APP_ID = '<%=facebook_app_id %>';
 TWITTER = '<%=twitter %>';
 </script>
+<script>
+$(document).ready(function () {
+  $('article').hide();
+	window.randomizer = Randomizer(AUTOTUNE);
+  pymChild.onMessage('updateData', function(data) {
+    form_data = JSON.parse(data);
+    $('.m-graphics-topper').show();
+
+		// load css file first
+		var themeTag = document.getElementById('themecss');
+		var themeFile = themeTag.getAttribute('href');
+		themeTag.setAttribute('href',
+			themeFile.replace(themeFile.match('[a-zA-Z0-9\-_]*.css$'), form_data.theme +'.css')
+		);
+
+		// handle custom color
+		if(form_data.theme === 'custom'){
+			$('#generate').css('background-color',form_data.customColor)
+				.hover(function(){
+					$(this).css('background-color',form_data.customColor);
+				});
+		} else {
+			$('#generate').removeProp('style');
+		}
+
+		var set_heading = '';
+		if (form_data.heading){
+			set_heading = form_data.heading.split("\n");
+		}
+
+		var twitterHandle = AUTOTUNE.theme_data[form_data.theme].social.twitter_handle;
+
+    window.randomizer.reload(form_data);
+		$('article').show();
+});
+
+});
+</script>
 <% if vertical == 'theverge' %>
 	<script src="//use.typekit.net/kxl5epj.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
@@ -17,5 +55,3 @@ TWITTER = '<%=twitter %>';
     <a id="facebook" href="#">Share</a>
   </div>
 </article>
-
-<%= javascript_include_tag  "edit_project" %>

@@ -1,7 +1,8 @@
 //= require pym
 //= require _wtf
 
-$(function() {
+window.pymChild = new pym.Child();
+window.Randomizer = (function($) {
   var openShareWindow = function (e) {
     var $link = $(this),
         width = 500,
@@ -18,11 +19,7 @@ $(function() {
     }
   };
 
-  $(document).ready(function() {
-    var pymChild = pym.Child();
-    // Anytime you change the height of the graphic, do this:
-    // pymChild.sendHeight();
-
+  function generateRandomizer(){
     var set_heading = '';
     if (AUTOTUNE.heading){
       set_heading = AUTOTUNE.heading.split("\n");
@@ -60,5 +57,17 @@ $(function() {
     });
 
     $('.share a').click(openShareWindow);
-  });
-});
+  }
+
+  var reload = function(opts){
+    generateRandomizer();
+    pymChild.sendMessage('childLoaded', 'ready');
+  };
+
+  var initialize = function( opts ) {
+    reload(opts);
+    return { reload: reload };
+  };
+
+  return initialize;
+})($);
