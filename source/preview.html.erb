@@ -4,11 +4,13 @@ FB_APP_ID = '<%=facebook_app_id %>';
 TWITTER = '<%=twitter %>';
 </script>
 <script>
+var themeData = AUTOTUNE.theme_data;
 $(document).ready(function () {
   $('article').hide();
 	window.randomizer = Randomizer(AUTOTUNE);
   pymChild.onMessage('updateData', function(data) {
     AUTOTUNE = JSON.parse(data);
+		AUTOTUNE.theme_data = theme_data;
 
 		// load css file first
 		var themeTag = document.getElementById('themecss');
