@@ -32,9 +32,10 @@ $(document).ready(function () {
     window.randomizer.reload(AUTOTUNE);
 		$('article').show();
 
-		$(window).on('load resize', function(){
-			pymChild.sendHeight();
-		});
+});
+
+$(window).on('load resize', function(){
+	pymChild.sendHeight();
 });
 
 });
