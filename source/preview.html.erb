@@ -29,10 +29,9 @@ $(document).ready(function () {
 			$('#generate').removeProp('style');
 		}
 
-		var twitterHandle = AUTOTUNE.theme_data[AUTOTUNE.theme].social.twitter_handle;
-
     window.randomizer.reload(AUTOTUNE);
 		$('article').show();
+		pymChild.sendHeight();
 });
 
 });
