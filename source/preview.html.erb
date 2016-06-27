@@ -31,7 +31,10 @@ $(document).ready(function () {
 
     window.randomizer.reload(AUTOTUNE);
 		$('article').show();
-		pymChild.sendHeight();
+
+		$(window).on('load resize', function(){
+			pymChild.sendHeight();
+		});
 });
 
 });
