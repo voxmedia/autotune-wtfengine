@@ -99,6 +99,30 @@
       "homepage_redirect": "voxmedia.com",
       "chorus_api_domain": "product.voxmedia.com.sb4.sbndev.net",
       "group_slug": "vox-creative"
+    },
+    "generic": {
+      "colors": {
+        "primary_color": " #3d3a44",
+        "secondary_color": " #3d3a44",
+        "arrow_color": " #3d3a44",
+        "button_bg_color": " #3d3a44",
+        "button_bg_color_hover": "darken($button-bg-color, 4%)",
+        "button_font_color": "white"
+      },
+      "fonts": {
+        "font_css": "@import url('//hello.myfonts.net/count/2fb453');\n        @font-face {\n            font-family: 'Alright Sans';\n            src: url('alright-sans/alright-sans-bold.eot');\n            src: url('alright-sans/alright-sans-bold.eot?') format('embedded-opentype'),\n              url('alright-sans/alright-sans-bold.woff') format('woff2'),\n              url('alright-sans/alright-sans-bold.woff') format('woff'),\n              url('alright-sans/alright-sans-bold.ttf') format('truetype');\n            font-style: normal;\n            font-weight: bold;\n          }\n\n          @font-face {\n            font-family: 'Alright Sans';\n            src: url('alright-sans/alright-sans.eot');\n            src: url('alright-sans/alright-sans.eot?') format('embedded-opentype'),\n              url('alright-sans/alright-sans.woff') format('woff2'),\n              url('alright-sans/alright-sans.woff') format('woff'),\n              url('alright-sans/alright-sans.ttf') format('truetype');\n            font-style: normal;\n            font-weight: normal;\n          }\n\n          @font-face {\n            font-family: 'Alright Sans Ultra';\n            src: url('alright-sans/alright-sans-ultra.eot');\n            src: url('alright-sans/alright-sans-ultra.eot?') format('embedded-opentype'),\n              url('alright-sans/alright-sans-ultra.woff') format('woff2'),\n              url('alright-sans/alright-sans-ultra.woff') format('woff'),\n              url('alright-sans/alright-sans-ultra.ttf') format('truetype');\n            font-style: normal;\n            font-weight: normal;\n        }",
+        "body_font_family": "Alright Sans Regular, sans serif",
+        "header_font_family": "Alright Sans Ultra, sans serif",
+        "button_font_family": "Alright Sans Regular, sans serif",
+        "header_font_weight": 700,
+        "button_font_weight": "normal"
+      },
+      "social": {
+        "twitter_handle": "voxmediainc"
+      },
+      "homepage_redirect": "voxmedia.com",
+      "chorus_api_domain": "sbnation.com.sb4.sbndev.net",
+      "group_slug": "generic"
     }
   }
 }

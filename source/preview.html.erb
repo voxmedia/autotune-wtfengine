@@ -6,7 +6,6 @@ TWITTER = '<%=twitter %>';
 <script>
 var themeData = AUTOTUNE.theme_data;
 $(document).ready(function () {
-  $('article').hide();
 	window.randomizer = Randomizer(AUTOTUNE);
   pymChild.onMessage('updateData', function(data) {
     AUTOTUNE = JSON.parse(data);
@@ -28,9 +27,10 @@ $(document).ready(function () {
 		} else {
 			$('#generate').removeProp('style');
 		}
-		$('article').show();
     window.randomizer.reload(AUTOTUNE);
-
+		setTimeout(function(){
+			pymChild.sendHeight();
+		}, 500);
 });
 
 $(window).on('load resize', function(){

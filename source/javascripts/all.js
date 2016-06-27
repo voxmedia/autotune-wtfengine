@@ -57,7 +57,6 @@ window.Randomizer = (function($) {
     });
 
     $('.share a').click(openShareWindow);
-    pymChild.sendHeight();
   }
 
   var reload = function(opts){
