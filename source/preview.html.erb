@@ -10,7 +10,7 @@ $(document).ready(function () {
 	window.randomizer = Randomizer(AUTOTUNE);
   pymChild.onMessage('updateData', function(data) {
     AUTOTUNE = JSON.parse(data);
-		AUTOTUNE.theme_data = theme_data;
+		AUTOTUNE.theme_data = themeData;
 
 		// load css file first
 		var themeTag = document.getElementById('themecss');
