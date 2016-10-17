@@ -129,18 +129,20 @@ h4, h2 {
   line-height: 1em;
 }
 
-<% if vertical === 'racked' %>
+<% if data.autotune.group === 'racked' || data.autotune.group === 'theverge'%>
 #generate {
   letter-spacing:1px;
   font-size:18px;
+  text-decoration: none;
 }
 .share a {
   font-size:16px;
   letter-spacing:1px;
+  text-decoration: none;
 }
 <% end %>
 
-<% if vertical === 'recode' %>
+<% if data.autotune.group === 'recode' %>
 .share a {
   font-family: 'Klavika' !important;
 }
