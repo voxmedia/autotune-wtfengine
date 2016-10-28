@@ -1,9 +1,9 @@
 {
   "title": "Testing heds",
   "slug": "testing-heds",
-  "group": "eater",
-  "theme": "eater",
-  "available_themes": ["custom", "eater", "generic"],
+  "group": "theverge",
+  "theme": "theverge",
+  "available_themes": ["custom", "eater", "theverge"],
   "heading": "Check out this funny headline\nOMG animals!\n",
   "response": "Gimmmie!\nClick me!",
   "template": "Ooooo! Its a @adj @animal\nGross. I don't like this @adj @animal",
@@ -123,6 +123,33 @@
       "homepage_redirect": "voxmedia.com",
       "chorus_api_domain": "sbnation.com.sb4.sbndev.net",
       "group_slug": "generic"
-    }
+    },
+    "theverge":{
+  "colors": {
+    "primary_color": "#D71920",
+    "secondary_color": "#000000",
+    "brand_background": "#ffffff",
+    "brand_text_color": "#000000",
+    "header_font_color": "#222222",
+    "button_bg_color": "#000000",
+    "button_bg_color_hover": "lighten($button-bg-color, 15%)",
+    "button_font_color": "white",
+    "chart_primary_color": "#D71920",
+    "chart_secondary_color": "#000000"
+  },
+  "fonts": {
+    "font_css": "@import url('//hello.myfonts.net/count/293d82');\n@font-face { font-family: 'New-Grotesk-Square-Four'; src: url('//fonts.voxmedia.com/unison/verge/New-Grotesk-Square-FOURWEB.woff2') format('woff2'), url('//fonts.voxmedia.com/unison/verge/New-Grotesk-Square-FOURWEB.woff') format('woff'); }\n$helvetica: Helvetica, Roboto, Arial, sans-serif; $menu-font: $helvetica;",
+    "body_font_family": "$helvetica",
+    "header_font_family": "'New-Grotesk-Square-Four', sans-serif",
+    "button_font_family": "'New-Grotesk-Square-Four', sans-serif",
+    "header_font_weight": "normal",
+    "button_font_weight": "normal"
+  },
+  "social": {
+    "twitter_handle": "verge"
+  },
+  "homepage_redirect": "theverge.com",
+  "chorus_api_domain": "theverge.com.sb4.sbndev.net"
+}
   }
 }
